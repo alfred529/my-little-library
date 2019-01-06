@@ -24,14 +24,3 @@
     "rimraf": "^2.6.3"
   }
 }
-
-
-
-
-"main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
-  "repository": {
-    "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
-  }
