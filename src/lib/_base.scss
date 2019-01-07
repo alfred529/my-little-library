@@ -1,0 +1,48 @@
+// COLOR VARIABLES
+
+$color-primary: #056442;
+$color-primary-highlight: #0D3456;
+$color-primary-dark: #061456;
+$color-primary-medium: #026456;
+$color-primary-light: #4F6456;
+
+
+$color-grey-light: #DCE456;
+$color-grey-medium: #96A456;
+$color-grey-medium-text: #808456;
+$color-grey-dark: #8C8C8C;
+$color-grey-verydark: #4D4456;
+
+$color-orange: #D16456;
+$color-orange-light: #ffa456;
+$color-yellow: #FED456;
+
+// FONT VARIABLES
+
+// Aktiv Grotesk (regular 16) is the main font (weight 400)
+@font-face {
+  font-family: 'AktivGrotesk';
+  src: url(../fonts/AktivGrotesk.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Aktiv Grotesk (bold 16) is for links and sub-titles (weight 700)
+@font-face {
+  font-family: 'AktivGrotesk-Bold';
+  src: url(../fonts/AktivGrotesk-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+// Acumin Pro (medium 28) is for titles
+@font-face {
+  font-family: 'AcuminPro-Medium';
+  src: url(../fonts/AcuminPro-Medium.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-primary: 'AktivGrotesk';
+$font-primary-bold: 'AktivGrotesk-Bold';
+$font-titles: 'AcuminPro-Medium';

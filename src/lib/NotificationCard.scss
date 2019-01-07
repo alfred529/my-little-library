@@ -1,0 +1,113 @@
+@import './base.scss';
+
+.NotificationCard {
+
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &__left {
+        grid-column: 1 / 2;
+        background-color: #fff;
+        color: orangered;
+        width: 260px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.75rem 2rem 5rem 2rem 1.75rem;
+    }
+
+    &__new {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        align-self: center;
+        margin-left: 10px;
+
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        color: white;
+        background-color: #FED047;
+    }
+
+    &__header {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        padding-left: 26px;
+        align-self: center;
+        font-family: $font-primary-bold;
+        color: #4D4D4D;
+    }
+
+    &__content {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        margin: 0 10px;
+        align-self: center;
+        color: #4D4D4D;
+        font-size: 13px;
+    }
+
+    &__time {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        margin: 0 10px;
+        align-self: center;
+        color: #808080;
+        font-size: 13px;
+    }
+
+
+
+    &__right {
+        grid-column: 2 / -1;
+        background-image: linear-gradient(to right, rgb(62, 81, 95), #4F6778);
+        width: 45px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    &__view,
+    &__view:hover,
+    &__view:active {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-icon {
+            fill: #fff;
+        }
+    }
+
+
+    &__separator {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        width: 100%;
+        height: 2px;
+        background-color: rgb(62, 81, 95);
+        align-self: end;
+        justify-self: center;
+
+    }
+
+    &__close,
+    &__close:hover,
+    &__close:active {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-icon {
+            fill: #fff;
+        }
+    }
+}
